@@ -27,21 +27,16 @@ O campo de telefone no formulário de contato agora possui uma máscara automát
 <Controller
   name="phone"
   control={control}
+  defaultValue=""
   render={({ field }) => (
-    <InputMask
-      mask="(999) 999-9999"
+    <IMaskInput
+      mask="(000) 000-0000"
       value={field.value}
-      onChange={field.onChange}
+      onAccept={(value) => field.onChange(value)}
       onBlur={field.onBlur}
-    >
-      {(inputProps) => (
-        <input
-          {...inputProps}
-          type="tel"
-          placeholder="(954) 654-6628"
-        />
-      )}
-    </InputMask>
+      placeholder="(954) 654-6628"
+      type="tel"
+    />
   )}
 />
 ```
