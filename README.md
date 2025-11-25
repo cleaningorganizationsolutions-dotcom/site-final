@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# COS - Cleaning & Organization Solutions
+
+A professional landing page for COS (Cleaning & Organization Solutions), a cleaning and organization company serving South Florida for over 7 years.
+
+## Features
+
+- **Modern Design**: Clean, professional UI inspired by industry best practices
+- **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
+- **Server-Side Rendering**: Built with Next.js 16 for optimal performance
+- **Contact Form**: Validated form using react-hook-form and Zod
+- **Smooth Navigation**: Scroll-to-section navigation with smooth animations
+- **SEO Optimized**: Proper meta tags and semantic HTML
+
+## Tech Stack
+
+- **Framework**: Next.js 16
+- **Styling**: Tailwind CSS 4
+- **Form Handling**: React Hook Form + Zod validation
+- **Input Masking**: React IMask (phone formatting)
+- **Icons**: Lucide React
+- **Language**: JavaScript (JSX)
+
+## Company Information
+
+- **Name**: COS - Cleaning & Organization Solutions
+- **Phone**: (954) 654-6628
+- **Email**: contact@coscleaningandorganizationsolutions.com
+- **Service Area**: South Florida
+- **Experience**: 7+ years in the industry
 
 ## Getting Started
 
-First, run the development server:
-
+1. **Install dependencies**:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Run the development server**:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. **Open your browser**:
+Navigate to [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+site-cos/
+├── app/
+│   ├── globals.css          # Global styles and Tailwind config
+│   ├── layout.js            # Root layout with metadata
+│   └── page.js              # Main landing page
+├── components/
+│   ├── ui/
+│   │   ├── Button.jsx       # Reusable button component
+│   │   ├── Input.jsx        # Form input component
+│   │   └── Textarea.jsx     # Form textarea component
+│   ├── Header.jsx           # Navigation header
+│   ├── Hero.jsx             # Hero section
+│   ├── Services.jsx         # Services showcase
+│   ├── About.jsx            # About company section
+│   ├── HowItWorks.jsx       # Process explanation
+│   ├── Contact.jsx          # Contact form
+│   └── Footer.jsx           # Footer section
+└── public/                  # Static assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Sections
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Hero**: Eye-catching introduction with CTAs
+2. **Services**: Six main cleaning services offered
+3. **About**: Company history, mission, and values
+4. **How It Works**: 4-step process explanation
+5. **Contact**: Form with validation and contact information
+6. **Footer**: Quick links and company details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Services Offered
 
-## Deploy on Vercel
+- Deep Cleaning
+- Regular Cleaning
+- Move In/Out Cleaning
+- Post-Construction Cleaning
+- Office Cleaning
+- Vacation Home Cleaning
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Build for Production
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm start
+```
+
+## Contact Methods
+
+- **Phone**: Direct call to (954) 654-6628
+- **WhatsApp**: Integrated WhatsApp messaging
+- **Email**: Contact form and direct email link
+
+## Mission
+
+To deliver exceptional cleaning services that exceed expectations, building lasting relationships with clients through reliability, professionalism, and an unwavering commitment to customer satisfaction.
+
+## License
+
+ 2025 COS - Cleaning & Organization Solutions. All rights reserved.
