@@ -59,14 +59,16 @@ Para alterar o formato do telefone, edite o arquivo `/components/Contact.jsx`:
 
 ```jsx
 // Formato atual (EUA)
-mask="(999) 999-9999"
+mask="(000) 000-0000"
 
 // Formato Brasil
-mask="(99) 99999-9999"
+mask="(00) 00000-0000"
 
 // Formato internacional
-mask="+9 (999) 999-9999"
+mask="+0 (000) 000-0000"
 ```
+
+**Nota**: No react-imask, use `0` para dígitos numéricos.
 
 ### Ajustar a Validação
 
