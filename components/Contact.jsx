@@ -3,7 +3,7 @@
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, MessageCircle } from 'lucide-react';
 import { IMaskInput } from 'react-imask';
 import { Input } from './ui/Input';
 import { Textarea } from './ui/Textarea';
@@ -87,17 +87,17 @@ export function Contact() {
             </div>
 
             <div className="space-y-6">
-              {/* Phone */}
+              {/* Message */}
               <a
-                href="tel:9546546628"
+                href="sms:9546546628"
                 className="flex items-start gap-4 p-4 rounded-xl hover:bg-white hover:shadow-md transition-all duration-300 group"
               >
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors">
-                  <Phone className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors" />
+                  <MessageCircle className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900 mb-1">Phone</div>
-                  <div className="text-gray-600">(954) 654-6628</div>
+                  <div className="font-semibold text-gray-900 mb-1">Message</div>
+                  <div className="text-gray-600">Text us: (954) 654-6628</div>
                 </div>
               </a>
 
@@ -113,7 +113,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900 mb-1">WhatsApp</div>
-                  <div className="text-gray-600">Message us anytime</div>
+                  <div className="text-gray-600">Message us: (954) 654-6628</div>
                 </div>
               </a>
 
