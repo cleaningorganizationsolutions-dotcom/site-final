@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { CheckCircle, Layers, FolderOpen, Sparkles } from 'lucide-react';
 
 const benefits = [
@@ -39,29 +38,8 @@ export function Organization() {
           </p>
         </div>
 
-        {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Left - Images */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src="/1.webp"
-                alt="Professional organization - before and after"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl mt-8">
-              <Image
-                src="/2.webp"
-                alt="Organized closet and storage solutions"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-          </div>
-
-          {/* Right - Content */}
+        {/* Main Content */}
+        <div className="max-w-4xl mx-auto mb-16">
           <div className="space-y-8">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gray-900">
