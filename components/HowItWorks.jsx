@@ -1,11 +1,11 @@
-import { Phone, Calendar, CreditCard, Sparkles } from 'lucide-react';
+import { MessageCircle, Calendar, CreditCard, Sparkles } from 'lucide-react';
 
 const steps = [
   {
-    icon: Phone,
+    icon: MessageCircle,
     number: '01',
     title: 'Contact Us',
-    description: 'Reach out via phone or WhatsApp to discuss your cleaning needs and get a free estimate.',
+    description: 'Send us a message via WhatsApp to discuss your cleaning needs and get a free estimate.',
   },
   {
     icon: Calendar,
@@ -86,11 +86,11 @@ export function HowItWorks() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:9546546628"
+              href="sms:9546546628"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-colors"
             >
-              <Phone className="w-5 h-5 mr-2" />
-              Call (954) 654-6628
+              <MessageCircle className="w-5 h-5 mr-2" />
+              Message Us
             </a>
             <a
               href="https://wa.me/19546546628"
