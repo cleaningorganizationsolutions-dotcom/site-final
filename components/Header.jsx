@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 import { Button } from './ui/Button';
 
 export function Header() {
@@ -58,10 +58,10 @@ export function Header() {
             >
               Contact
             </button>
-            <a href="tel:9546546628">
+            <a href="sms:9546546628">
               <Button size="sm">
-                <Phone className="w-4 h-4 mr-2" />
-                (954) 654-6628
+                <MessageCircle className="w-4 h-4 mr-2" />
+                Message Us
               </Button>
             </a>
           </nav>
@@ -107,10 +107,10 @@ export function Header() {
               >
                 Contact
               </button>
-              <a href="tel:9546546628" className="block">
+              <a href="sms:9546546628" className="block">
                 <Button size="sm" className="w-full">
-                  <Phone className="w-4 h-4 mr-2" />
-                  (954) 654-6628
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  Message Us
                 </Button>
               </a>
             </div>
