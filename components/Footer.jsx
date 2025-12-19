@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, MessageCircle } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,11 +15,11 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="tel:9546546628"
+                href="sms:9546546628"
                 className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
-                aria-label="Call us"
+                aria-label="Send SMS"
               >
-                <Phone className="w-5 h-5 text-white" />
+                <MessageCircle className="w-5 h-5 text-white" />
               </a>
               <a
                 href="https://wa.me/19546546628"
@@ -72,9 +72,15 @@ export function Footer() {
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
-                <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                <a href="tel:9546546628" className="hover:text-white transition-colors">
-                  (954) 654-6628
+                <MessageCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <a href="sms:9546546628" className="hover:text-white transition-colors">
+                  Message: (954) 654-6628
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <MessageCircle className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <a href="https://wa.me/19546546628" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  WhatsApp: (954) 654-6628
                 </a>
               </li>
               <li className="flex items-start gap-2">
